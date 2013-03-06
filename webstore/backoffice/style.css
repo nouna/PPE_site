@@ -1,0 +1,305 @@
+/* --- STYLES DE BASE --- */
+
+/*tableau*/
+table{
+
+border-style: solid;
+border-width: 1px;
+margin-left: auto;
+margin-right: auto;
+border-color: grey;
+width: 800px;
+
+}
+
+td{
+border-style: solid;
+border-width: 1px;
+border-color: grey;
+padding: 5px;
+}
+
+
+/* Page */
+html {
+  font-size: 100%; /* Évite un bug d'IE 6-7. (1) */
+}
+body {
+  margin: 0;
+  padding: 1em; /* Remettre à zéro si nécessaire. */
+  /* Pensez à utiliser une collection de polices (2), par ex:
+  font-family: Arial, Helvetica, FreeSans, sans-serif; */
+  font-size: .8em; /* À adapter pour la police choisie. (3) */
+  line-height: 1.4; /* À adapter au design. (4) */
+  color: black;
+  background-color: grey;
+  background-image:url(images/stripes1.jpg);
+  /*text-align: center;*/
+ 
+}
+
+section{
+ clear:both;
+ }
+ 
+ nav{
+ clear: both;
+ }
+ 
+header{
+padding: 5px;
+height: 190px;
+margin-bottom:20px;
+}
+ 
+ article{
+ }
+ 
+ footer{
+ text-align: center;
+ 
+ 
+ }
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 .5em 0; /* Rapproche le titre du texte. (5) */
+  line-height: 1.2;
+  font-weight: bold; /* Valeur par défaut. (6) */
+  font-style: normal;
+}
+h1 {
+  font-size: 1.75em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1em;
+}
+
+/* Listes */
+ul, ol {
+  margin: .75em 0 .75em 32px;
+  padding: 0;
+}
+
+/* Paragraphes */
+p {
+   margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+/* Liens */
+a {
+  text-decoration: underline;
+}
+a:link {
+  color: #11C;
+}
+a:visited {
+  color: #339;
+}
+a:hover, a:focus, a:active {
+  color: #00F;
+}
+
+/* Pas de bordure autour des images dans les liens */
+a img {
+  border: none;
+}
+
+/* Divers éléments de type en-ligne (8) */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+/* Formulaires */
+form, fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, button
+{
+vertical-align: middle; /* Solution pb. d'alignement. (9) */
+width:100%;
+}
+
+select, textarea  {
+vertical-align: middle; /* Solution pb. d'alignement. (9) */
+width: 96%;
+  }
+  
+
+.bouton a {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(images/bouton1.png) no-repeat;
+color:white;
+text-decoration:none;
+float:left;
+margin: 2px;
+}
+
+.bouton a:hover {
+background:url(images/bouton2.png) no-repeat;
+}
+
+.content{
+width : 80%;
+background-color : white;
+margin: auto;
+border-radius: 30px;
+margin-top: 20px;
+min-width: 1000px;
+border: 1px solid;
+}
+
+/*/----------LOGO HAUT GAUCHE-----------/*/
+
+#page{
+width: 300px;
+float: left;
+}
+
+#page h1 { 
+ background: url('images/logo.jpg') top left no-repeat;
+ margin: 3px;
+ width: 233px;
+ height: 187px;
+ margin-left: 25px;
+}
+/*/----------LIENS Bannière (fb, twitter, blog...)-----------/*/
+
+#page2{
+width: 60px;
+float: right;
+margin-top: 0px;
+}
+#page2 h2 { 
+
+ /*/background: url('images/panier.jpg') top left no-repeat;/*/
+ margin: 0px;
+ margin-bottom: 4px;
+ width: 50px;
+ height: 50px;
+}
+
+/*/----------LIEN PANIER droit-----------/*/
+
+#page3{
+width: 290px;
+float: left;
+}
+#page3 h3 { 
+
+ /*/background: url('images/panier.jpg') top left no-repeat;/*/
+ width: 246 px;
+ height: 142px;
+ display: inline-block;
+}
+
+ /*/------------------BANNIERE PARTIE DROITE------------------/*/
+
+#bloc_droit{
+width: 380px;
+float: right;
+margin-right: -80px;
+}
+
+/*/----------  RUBAN PSD -----------/*/
+.mainmenu{
+width: 100%;
+height: 140px;
+margin: 2px;
+margin-left: -0px;
+}
+/*/----------  RUBAN GAUCHE -----------/*/
+.menu1{
+background: url('images/left2.png') repeat-x;
+height: 124px;
+width: 107px;
+float: left;
+margin-left: -107px;
+}
+/*/----------  RUBAN CENTRE -----------/*/
+.menu2 {
+
+width: 100%;
+background: url('images/mid.png') top left repeat-x;
+height: 124px;
+margin-right: auto;
+margin-left: auto;
+}
+/*/----------  RUBAN DROITE -----------/*/
+.menu3{
+background: url('images/right2.png') repeat-x;
+height: 124px;
+width: 107px;
+float: right;
+margin-right: -107px;
+margin-top: -1px;
+}
+
+.navtest a{
+	
+display:block;
+width:100px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+color:white;
+text-decoration:none;
+float:left;
+margin-top: 5px;
+}
+
+/* ------CONTENU SEARCH BOX-------*/
+
+#searchwrapper {
+width:283px; /*follow your image's size*/
+height:29px;/*follow your image's size*/
+background-image:url(images/SB.png);
+background-repeat:no-repeat; /*important*/
+padding:0px;
+margin:0px;
+position:relative; /*important*/
+margin-left: 0px;
+}
+ 
+#searchwrapper form { display:inline ; }
+ 
+.searchbox {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:4px;
+left:9px;
+width:235px;
+height:22px;
+margin-left:5px;
+}
+ 
+.searchbox_submit {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:4px;
+left:265px;
+width:30px;
+height:27px;
+margin-left: -20px;
+margin-top: -3px;
+}
